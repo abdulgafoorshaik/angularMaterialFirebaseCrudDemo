@@ -4,10 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EmployeeComponent } from './employees/employee/employee.component';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { EmployeeComponent } from './employees/employee/employee.component';
+import { MaterialModule } from '../app/material/material.module';
 
 
 @NgModule({
@@ -19,8 +18,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
